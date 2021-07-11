@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web/static/css/main.5558608c.chunk.css",
-    "main.js": "/web/static/js/main.f48f421e.chunk.js",
+    "main.js": "/web/static/js/main.c78b7778.chunk.js",
     "runtime-main.js": "/web/static/js/runtime-main.7d9a1105.js",
     "static/css/2.ae9e5f60.chunk.css": "/web/static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js": "/web/static/js/2.1324227b.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Brochure.c65645de.pdf": "/web/static/media/Brochure.c65645de.pdf",
     "static/media/Rohith.36ccd045.jpg": "/web/static/media/Rohith.36ccd045.jpg",
     "static/media/Yashwanth.9746ecfb.jpg": "/web/static/media/Yashwanth.9746ecfb.jpg",
+    "static/media/akhil.2934b4ac.jpg": "/web/static/media/akhil.2934b4ac.jpg",
     "static/media/contactUsDemoImage.90dc751e.jpg": "/web/static/media/contactUsDemoImage.90dc751e.jpg",
     "static/media/directorsdesk.1aab22ef.jpg": "/web/static/media/directorsdesk.1aab22ef.jpg",
     "static/media/image1.cd74d2d0.jpeg": "/web/static/media/image1.cd74d2d0.jpeg",
@@ -28,6 +29,6 @@
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js",
     "static/css/main.5558608c.chunk.css",
-    "static/js/main.f48f421e.chunk.js"
+    "static/js/main.c78b7778.chunk.js"
   ]
 }
