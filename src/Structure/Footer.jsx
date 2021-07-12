@@ -6,14 +6,13 @@ import { address, Contacts, FooterLinks } from "../Content/footerInfo";
 // import Brochure from "../Brochure.pdf";
 
 function Footer() {
-  return (
-    <div className="main">
-      <footer>
-        <div className="footer">
-          <div className="logoSpace footerItems">
-            <img src={Logo} alt="Logo" className="logoF" />
-          </div>
-
+    return (
+        <div className='main'>
+            <footer>
+                <div className='footer'>
+                    <div className='logoSpace footerItems'>
+                        <img src={Logo} alt='Logo' className='logoF' />
+                    </div>
           <div className="address footerItems">
             <h3 className="footer-title">Address</h3>
             <div className="contentCards">
@@ -35,60 +34,67 @@ function Footer() {
             </div>
           </div>
 
-          <div className="footerItems">
-            <h3 className="footer-title">Quick Links</h3>
-            <ul className="quickLinks">
-              {FooterLinks.map((link, id) => {
-                return (
-                  <ul key={id} className="list">
-                    <li key={link.id} className="fas fa-chevron-right rightIcon"></li>
-                    <a href={link.link}>
-                        {link.name}
-                    </a>
-                  </ul>
-                );
-              })}
-              
-            </ul>
-          </div>
+                    <div className='footerItems'>
+                        <h3 className='footer-title'>Quick Links</h3>
+                        <ul className='quickLinks'>
+                            {FooterLinks.map((link, id) => {
+                                return (
+                                    <ul key={id} className='list'>
+                                        <li
+                                            key={link.id}
+                                            className='fas fa-chevron-right rightIcon'></li>
+                                        <a href={link.link}>{link.name}</a>
+                                    </ul>
+                                );
+                            })}
+                        </ul>
+                    </div>
 
-          <div className=" footerItems">
-            <h3 className="footer-title contactUs">Conatct Us</h3>
+                    <div className=' footerItems'>
+                        <h3 className='footer-title contactUs'>Conatct Us</h3>
 
-            {Contacts.map((item,id) => {
-              return (
-                <div key={id} className="contentCards">
-                  <div>{item.name}</div>
-                  <a className="phoneNum" href={`mailto:${item.email}`}>
-                    <i className="fas fa-envelope" aria-hidden="true"></i> :{" "}
-                    {item.email}
-                  </a>
-                  <a className="phoneNum" href={`tel: ${item.phoneNum}`}>
-                    <i className="fa fa-phone" aria-hidden="true"></i> :{" "}
-                    {item.phoneNum}
-                  </a>
+                        {Contacts.map((item, id) => {
+                            return (
+                                <div key={id} className='contentCards'>
+                                    <div>{item.name}</div>
+                                    <a
+                                        className='phoneNum'
+                                        href={`mailto:${item.email}`}>
+                                        <i
+                                            className='fas fa-envelope'
+                                            aria-hidden='true'></i>{" "}
+                                        : {item.email}
+                                    </a>
+                                    <a
+                                        className='phoneNum'
+                                        href={`tel: ${item.phoneNum}`}>
+                                        <i
+                                            className='fa fa-phone'
+                                            aria-hidden='true'></i>{" "}
+                                        : {item.phoneNum}
+                                    </a>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
 
-        <div className="footer-bottom">
-          <div className="copyright ">
-            <div>
-              © 2021{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.iiitr.ac.in/"
-              >
-                {" "}
-                Indian Institute of Information Technology, Raichur{" "}
-              </a>
-            </div>
-          </div>
+                <div className='footer-bottom'>
+                    <div className='copyright '>
+                        <div>
+                            © 2021{" "}
+                            <a
+                                target='_blank'
+                                rel='noreferrer'
+                                href='https://www.iiitr.ac.in/'>
+                                {" "}
+                                Indian Institute of Information Technology,
+                                Raichur{" "}
+                            </a>
+                        </div>
+                    </div>
 
-          {/* <div className="col-md-6">
+                    {/* <div className="col-md-6">
                         <nav id="footer-navigation" className="site-navigation footer-navigation centered-box" role="navigation">
                             <ul id="footer-menu" className="nav-menu styled clearfix inline-inside">
                             <li key="1" id="menu-item-26" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="https://www.iiitr.ac.in/">Support</a></li>
@@ -98,7 +104,7 @@ function Footer() {
                         </nav>
                     </div> */}
 
-          {/* <div className="col-md-3">
+                    {/* <div className="col-md-3">
 
                     <div className="footer-socials">
 
@@ -132,10 +138,10 @@ function Footer() {
 
                     </div>
                     </div> */}
+                </div>
+            </footer>
         </div>
-      </footer>
-    </div>
-  );
+    );
 }
 
 export default Footer;

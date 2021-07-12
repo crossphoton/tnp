@@ -1,234 +1,234 @@
-@import '../SASS/media';
+@import "../SASS/media";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 .main {
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    text-align: left;
-
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    height: fit-content;
-    background-color: #081e3f;
-
-    @include mobile{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .footerItems {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-right: 4vw;
-
-      @include mobile{
-        width: 100%;
-        padding: 4vw;
-        padding-bottom: 0;
-      }
-    }
-
-    .logoSpace {
-      width: 20vw;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .quickLinks {
-      list-style: none;
-      margin: 0%;
-      padding: 0%;
-      width: 90%;
-
-      @include mobile{
-        column-count: 2;
-        width: 100%;
-      }
-
-      .list {
+    .footer {
         display: flex;
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        align-items: center;
-        border-bottom: 1px solid #bcc3df;
+        justify-content: space-around;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        text-align: left;
 
-        @include mobile{
-          padding: 0;
-          padding-bottom: 4vh;
-          border-bottom: none;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        height: fit-content;
+        background-color: #081e3f;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
         }
 
-        .rightIcon {
-          padding: 7px;
-          padding-left: 0;
-          font-size: 14px;
+        h1 {
+            font-size: 2rem;
+            text-align: center;
         }
 
-        a {
-          font-size: 16px;
-          color: white;
-          font-family: "Rubik", sans-serif;
-          font-style: normal;
+        .footerItems {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 4vw;
 
-          &:hover {
-            text-decoration: none;
-          }
+            @include mobile {
+                width: 100%;
+                padding: 4vw;
+                padding-bottom: 0;
+            }
         }
-      }
+
+        .logoSpace {
+            width: 20vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quickLinks {
+            list-style: none;
+            margin: 0%;
+            padding: 0%;
+            width: 90%;
+
+            @include mobile {
+                column-count: 2;
+                width: 100%;
+            }
+
+            .list {
+                display: flex;
+                padding: 10px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                align-items: center;
+                border-bottom: 1px solid #bcc3df;
+
+                @include mobile {
+                    padding: 0;
+                    padding-bottom: 4vh;
+                    border-bottom: none;
+                }
+
+                .rightIcon {
+                    padding: 7px;
+                    padding-left: 0;
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 16px;
+                    color: white;
+                    font-family: "Rubik", sans-serif;
+                    font-style: normal;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
-.mapI{
-  height: 30vh;
-  width: 25vw;
+.mapI {
+    height: 30vh;
+    width: 25vw;
 
-  @include mobile{
-    width: 92vw;
-  }
+    @include mobile {
+        width: 92vw;
+    }
 }
 
 .logoF {
-  filter: invert(95%) sepia(90%) saturate(10%) hue-rotate(220deg)
-    brightness(102%) contrast(99%);
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 9vw;
-  @include mobile{
-    width: 30vw;
-  }
+    filter: invert(95%) sepia(90%) saturate(10%) hue-rotate(220deg)
+        brightness(102%) contrast(99%);
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 9vw;
+    @include mobile {
+        width: 30vw;
+    }
 }
 
 .footer-title {
-  margin-bottom: 40px;
-  color: #fff;
-  font-weight: 500;
-  text-transform: capitalize;
-  padding-bottom: 15px;
-  font-size: 16px;
-  position: relative;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 16px;
+    position: relative;
 
-  @include mobile{
-    margin-bottom: 4vh;
-  }
+    @include mobile {
+        margin-bottom: 4vh;
+    }
 }
 
 .footer-title:after {
-  width: 50px;
-  background: #fff;
-  opacity: 0.2;
-  height: 1px;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
+    width: 50px;
+    background: #fff;
+    opacity: 0.2;
+    height: 1px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .contentCards {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: justify;
-  margin-bottom: 2vh;
-  font-family: "Rubik", sans-serif;
-  //font-size: 1vw;
-  font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    margin-bottom: 2vh;
+    font-family: "Rubik", sans-serif;
+    //font-size: 1vw;
+    font-style: normal;
 
-  .phoneNum {
-    display: inline !important;
-  }
+    .phoneNum {
+        display: inline !important;
+    }
 }
 
 .map {
-  padding-top: 2vh;
+    padding-top: 2vh;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 10vw;
-  border-top: 1px solid #313646;
-  background-color: #181828 !important;
-  font-family: "Montserrat", sans-serif;
-  color: #99a9b5;
-  padding-top: 0;
-  padding-bottom: 2vh;
-  box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4),
-    -3px -3px 10px rgba(255, 255, 255, 0.06),
-    inset 14px 14px 26px rgba(0, 0, 0, 0.3),
-    inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10vw;
+    border-top: 1px solid #313646;
+    background-color: #181828 !important;
+    font-family: "Montserrat", sans-serif;
+    color: #99a9b5;
+    padding-top: 0;
+    padding-bottom: 2vh;
+    box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4),
+        -3px -3px 10px rgba(255, 255, 255, 0.06),
+        inset 14px 14px 26px rgba(0, 0, 0, 0.3),
+        inset -3px -3px 15px rgba(255, 255, 255, 0.05);
 
-  .copyright {
-    padding: 1.5vh;
-    font-size: 1vw;
+    .copyright {
+        padding: 1.5vh;
+        font-size: 1vw;
 
-    @include mobile{
-      font-size: 3vw;
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      text-align: center;
+        @include mobile {
+            font-size: 3vw;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+        }
     }
-  }
 }
 
 #footer-menu {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #footer-menu li {
-  display: inline-block;
-  padding: 0 21px;
-  position: relative;
-  line-height: 1;
-  font-size: 1vw;
+    display: inline-block;
+    padding: 0 21px;
+    position: relative;
+    line-height: 1;
+    font-size: 1vw;
 }
 
 #footer-menu li + li:before {
-  content: "";
-  width: 0;
-  height: 100%;
-  position: absolute;
-  left: -1px;
-  top: 0;
-  font-size: 0;
-  border-left: 1px solid #232234;
-  border-right: 1px solid #333146;
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    font-size: 0;
+    border-left: 1px solid #232234;
+    border-right: 1px solid #333146;
 }
 
 .footer-socials {
-  display: flex;
+    display: flex;
 }
 
 .facebook {
-  color: #4e64b5;
+    color: #4e64b5;
 }
 
 .twitter {
-  color: #00aced;
+    color: #00aced;
 }
 .instagram {
-  color: #9a8f62;
+    color: #9a8f62;
 }
 .youtube {
-  color: #c82929;
+    color: #c82929;
 }
 
 .telegram {
-  color: #2ca5e0;
+    color: #2ca5e0;
 }
