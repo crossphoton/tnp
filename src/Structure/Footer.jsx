@@ -13,25 +13,26 @@ function Footer() {
                     <div className='logoSpace footerItems'>
                         <img src={Logo} alt='Logo' className='logoF' />
                     </div>
+          <div className="address footerItems">
+            <h3 className="footer-title">Address</h3>
+            <div className="contentCards">
+              <div>Temporary Campus</div>
+              <div>{address}</div>
+              <div className="map">
 
-                    <div className='address footerItems'>
-                        <h3 className='footer-title'>Address</h3>
-                        <div className='contentCards'>
-                            <div>Temporary Campus:</div>
-                            <div>{address}</div>
-                            <div className='map'>
-                                <iframe
-                                    src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7660.909016923461!2d77.3659917!3d16.2484598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d17abbd87b87%3A0x28afde55f519a10b!2sIndian%20Institute%20of%20Information%20Technology%2C%20Raichur!5e0!3m2!1sen!2sin!4v1626079881887!5m2!1sen!2sin'
-                                    title='map'
-                                    className='mapI'
-                                    frameBorder='0'
-                                    style={{ border: 0 }}
-                                    allowFullScreen=''
-                                    aria-hidden='false'
-                                    tabIndex='0'></iframe>
-                            </div>
-                        </div>
-                    </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4501724340257!2d77.36376861384535!3d16.248682338922013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d17abbd87b87%3A0x28afde55f519a10b!2sIndian%20Institute%20of%20Information%20Technology%2C%20Raichur!5e0!3m2!1sen!2sin!4v1626109545024!5m2!1sen!2sin"
+                  title="map"
+                  className="mapI"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  aria-hidden="false"
+                  tabIndex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
 
                     <div className='footerItems'>
                         <h3 className='footer-title'>Quick Links</h3>
