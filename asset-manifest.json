@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web/static/css/main.5558608c.chunk.css",
-    "main.js": "/web/static/js/main.c78b7778.chunk.js",
+    "main.js": "/web/static/js/main.e77617f0.chunk.js",
     "runtime-main.js": "/web/static/js/runtime-main.7d9a1105.js",
     "static/css/2.ae9e5f60.chunk.css": "/web/static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js": "/web/static/js/2.1324227b.chunk.js",
@@ -12,7 +12,7 @@
     "static/css/main.5558608c.chunk.css.map": "/web/static/css/main.5558608c.chunk.css.map",
     "static/js/2.1324227b.chunk.js.LICENSE.txt": "/web/static/js/2.1324227b.chunk.js.LICENSE.txt",
     "static/media/Ananya.e5ebab7a.png": "/web/static/media/Ananya.e5ebab7a.png",
-    "static/media/Brochure.c65645de.pdf": "/web/static/media/Brochure.c65645de.pdf",
+    "static/media/Brochure.dc3b4624.pdf": "/web/static/media/Brochure.dc3b4624.pdf",
     "static/media/Rohith.36ccd045.jpg": "/web/static/media/Rohith.36ccd045.jpg",
     "static/media/Yashwanth.9746ecfb.jpg": "/web/static/media/Yashwanth.9746ecfb.jpg",
     "static/media/akhil.2934b4ac.jpg": "/web/static/media/akhil.2934b4ac.jpg",
@@ -29,6 +29,6 @@
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js",
     "static/css/main.5558608c.chunk.css",
-    "static/js/main.c78b7778.chunk.js"
+    "static/js/main.e77617f0.chunk.js"
   ]
 }
