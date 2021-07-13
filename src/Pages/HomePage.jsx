@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/logo.svg"
 import ReusableCard from '../components/ReusableBlock';
-import BackImg from '../images/image1.jpeg'
+import BackImg from '../images/banner/cover.webp'
 import WhyRecruitUs from "./WhyRecruitUs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,7 +41,7 @@ const HomePage = React.forwardRef((props, ref)=> {
 
                     <div className="HomepageLogoText" data-aos={screenSize>960 ? "fade-right" : "fade-down"}  >
                         {screenSize>960 ? <h1>Training and <br/>Placement Cell</h1> : <h1>Training and Placement Cell</h1>}
-                        <h6>Indian Institute Of Information Technology, Raichur</h6>
+                        <h6>Indian Institute of Information Technology, Raichur</h6>
                     </div>
 
             
@@ -79,7 +79,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                 return(
                     <ReusableCard
                         key={id}
-                        isLeftAlign={item.isLeftAlign}
+                        isLeftAlign={screenSize <= 960 ? true : item.isLeftAlign }
                         haveLogo={item.haveLogo}
                         heading={item.heading}
                         writer={item.writer}
@@ -90,7 +90,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                 )
             })}
 
-            <div>
+            <div style={{maxWidth: "1000px", margin: "auto"}}>
             <div id="recruit" style={{height:"2vh"}} ></div>
 
             <h1 className="recruitHead" data-aos="fade-up"  href='/somefile.txt' download >Why Recruit Us</h1>
@@ -100,34 +100,15 @@ const HomePage = React.forwardRef((props, ref)=> {
             </div>
  
         </div>
-        {/* <div className="whyUsHeading">
-            <h3 > Why us ??</h3>
-        </div> */}
-
-        {/* <div className="whyUsContent">
-            {WhyUs.map((item)=>{
-                return(
-                    <ReusableBlock2
-                        heading={item.heading}
-                        content={item.content}
-                    />
-                )
-            })}
-        </div> */}
-            {/* <div className="content">
-	            <div>
-                    <div className="missionHead" id="mission" >
-                        <h1 className="heading">
-                            Mission and Philosophy
-                        </h1>
-                    </div>
-                    <hr className="line" />
-
-                    <p className="missionContent" >
-                        {Mission}
-                    </p>
-                </div>
-            </div> */}
+        <div className="company">
+            <div className="company-flexbox">
+                <a target="_blank" href="https://ckmvigil.in/"><img data-aos="fade-up" data-aos-delay="100" alt="CKM Vigil" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img></a>
+                <a target="_blank" href="https://www.capgemini.com"><img data-aos="fade-up" data-aos-delay="100" alt="Capgemini" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img></a>
+                <img data-aos="fade-up" data-aos-delay="100" alt="Village Agro" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
+                <a target="_blank" href="https://storyxpress.co"><img data-aos="fade-up" data-aos-delay="150" alt="StoryXpress" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img></a>
+                <img data-aos="fade-up" data-aos-delay="150" alt="Planeteers HK" src="https://media-exp3.licdn.com/dms/image/C560BAQFK4ZtWzCHFxg/company-logo_200_200/0/1597050844205?e=2159024400&v=beta&t=KVrgXaJq4qhkxmrz0DZR8rGSN21pFiOV6GtBc-3YlvM"></img>
+            </div>
+        </div>
     </div>
   );
 });

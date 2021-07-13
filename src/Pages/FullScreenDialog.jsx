@@ -33,82 +33,89 @@ export default function FullScreenDialog(props) {
 
   var { open, handleClose } = props;
   return (
-    <div>
-      <Dialog
-        onClose={handleClose}
-        fullScreen
-        open={open}
-        TransitionComponent={Transition}
-      >
-        <AppBar style={{ background: "#27193E" }} className={classes.appBar}>
-          <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              aria-label="close"
-            >
-              <CloseIcon />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        <h3 className="contactUsCardsHeading"> Faculty Head </h3>
+      <div>
+          <Dialog
+              onClose={handleClose}
+              fullScreen
+              open={open}
+              TransitionComponent={Transition}>
+              <AppBar
+                  style={{ background: "#27193E" }}
+                  className={classes.appBar}>
+                  <Toolbar>
+                      <IconButton
+                          edge='start'
+                          color='inherit'
+                          onClick={handleClose}
+                          aria-label='close'>
+                          <CloseIcon />
+                      </IconButton>
+                  </Toolbar>
+              </AppBar>
+              <h3 className='contactUsCardsHeading'> Faculty Head </h3>
 
-        <div className="contactUsCardDialog">
-          {PlacementHead.map((item) => {
-            return (
-              <ContactUsCard
-                name={item.name}
-                email={item.email}
-                phone={item.phone}
-                image={item.image}
-              />
-            );
-          })}
-        </div>
+              <div className='contactUsCardDialog'>
+                  {PlacementHead.map((item, id) => {
+                      return (
+                          <ContactUsCard
+                              key={id}
+                              name={item.name}
+                              email={item.email}
+                              phone={item.phone}
+                              image={item.image}
+                          />
+                      );
+                  })}
+              </div>
 
-        <h3 className="contactUsCardsHeading"> Placement Team Coordinators </h3>
-        <div className="contactUsCardDialog">
-          {PlacementCoordinators.map((item) => {
-            return (
-              <ContactUsCard
-                name={item.name}
-                email={item.email}
-                phone={item.phone}
-                image={item.image}
-              />
-            );
-          })}
-        </div>
+              <h3 className='contactUsCardsHeading'>
+                  {" "}
+                  Placement Team Coordinators{" "}
+              </h3>
+              <div className='contactUsCardDialog'>
+                  {PlacementCoordinators.map((item, id) => {
+                      return (
+                          <ContactUsCard
+                              key={id}
+                              name={item.name}
+                              email={item.email}
+                              phone={item.phone}
+                              image={item.image}
+                          />
+                      );
+                  })}
+              </div>
 
-        <h3 className="contactUsCardsHeading"> Placement Team </h3>
-        <div className="contactUsCardDialog">
-          {PlacementTeam.map((item) => {
-            return (
-              <ContactUsCard
-                name={item.name}
-                email={item.email}
-                phone={item.phone}
-                image={item.image}
-              />
-            );
-          })}
-        </div>
+              <h3 className='contactUsCardsHeading'> Placement Team </h3>
+              <div className='contactUsCardDialog'>
+                  {PlacementTeam.map((item, id) => {
+                      return (
+                          <ContactUsCard
+                              key={id}
+                              name={item.name}
+                              email={item.email}
+                              phone={item.phone}
+                              image={item.image}
+                          />
+                      );
+                  })}
+              </div>
 
-        <h3 className="contactUsCardsHeading"> Web Team </h3>
-        <div className="contactUsCardDialog">
-          {WebTeam.map((item) => {
-            return (
-              <ContactUsCard
-                name={item.name}
-                email={item.email}
-                phone={item.phone}
-                image={item.image}
-              />
-            );
-          })}
-        </div>
-      </Dialog>
-    </div>
+              <h3 className='contactUsCardsHeading'> Web Team </h3>
+              <div className='contactUsCardDialog'>
+                  {WebTeam.map((item, id) => {
+                      return (
+                          <ContactUsCard
+                              key={id}
+                              name={item.name}
+                              email={item.email}
+                              phone={item.phone}
+                              image={item.image}
+                          />
+                      );
+                  })}
+              </div>
+          </Dialog>
+      </div>
   );
 }

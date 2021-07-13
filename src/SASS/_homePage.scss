@@ -325,3 +325,21 @@
   margin-right: 10vw;
   margin-left: 10vw;
 }
+
+.company-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 30vh;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 80vw;
+  
+  * {
+    margin: 20px 10px;
+    padding: 10px 10px;
+    height: 100px;
+    max-width: 80%;
+  }
+}

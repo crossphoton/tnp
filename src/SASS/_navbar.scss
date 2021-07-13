@@ -9,172 +9,195 @@ $hamburger-layer-color: rgb(194, 194, 194);
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin barTabs {
-  font-size: 1.2rem;
-  max-height: 15vh;
-  padding: 1.4vw;
-  padding-right: 5%;
+    font-size: 1.2rem;
+    max-height: 15vh;
+    padding: 1.4vw;
+    padding-right: 5%;
 }
 
 .navBase {
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  font-family: "Montserrat", sans-serif;
-  // max-height: 15vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    font-family: "Montserrat", sans-serif;
+    // max-height: 15vh;
 }
 
 .navBar {
-  @include barTabs;
-  height: 8vh;
-
-  @include mobile{
-    height: 9vh;
-  }
-  background-color: transparent;
-  transition: all 0.8s ease;
-
-  .logo {
-    position: fixed;
-    height: 6vh;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 10rem;
-    cursor: pointer;
-    //transform: translateY(-600px);
-    //animation: 1s slideIn ease-in-out forwards 0s;
-    z-index: 10;
-  }
-
-  .menu {
-    opacity: 0;
+    @include barTabs;
+    height: 8vh;
 
     @include mobile {
-      display: flex;
-      width: 100vw;
-      flex-direction: row;
-      justify-content: flex-end;
-      opacity: 1;
-
-      .ham {
-        outline: 0;
-      }
+        height: 9vh;
     }
-  }
-
-  .ham {
-    cursor: default;
-  }
-
-  .list {
-    position: fixed;
-    right: 5%;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    color: rgba(222, 227, 246, 0.6);
-    grid-gap: 2rem;
-    list-style: none;
-    text-align: center;
-    z-index: 10;
-    @include mobile{
-      padding: 2rem;
-    }
-
-    .dropdown {
-      border-radius: 10%;
-      perspective: 1000px;
-      font-size: 1.4rem;
-      padding: 1rem;
-      z-index: 100;
-      //transform: translateY(-600px);
-      //animation: 1s slideIn ease-in-out forwards 0s;
-      &:hover {
-        // background-color: rgba(207, 207, 207, 0.6);
-        cursor: pointer;
-      }
-
-      &:hover .dropdownMenu li {
-        display: block;
-      }
-
-      .tabIcon {
-        height: 2.5rem;
-        margin-right: 1rem;
-        font-size: 2.5rem;
-      }
-
-      .dropdownMenu {
-        position: absolute;
-        top: 100%;
-        perspective: 1000px;
-        width: fit-content;
-        z-index: -1;
-        padding: 0%;
-
-        li {
-          display: none;
-          list-style: none;
-          color: white;
-          background-color: #27193E;
-          padding: 10px 20px;
-          font-size: 1.2vw;
-          opacity: 0;
-          // box-shadow: 0 0 4px 0 #666666;
-
-          &:hover {
-            background-color: #27193ec4;
-          }
-        }
-
-        &:hover {
-          background: #2980b9;
-          cursor: pointer;
-        }
-
-        @for $num from 0 through 10 {
-          .dropdownItem-#{$num} {
-            font-size: 1.1vw;
-            transform-origin: top center;
-            animation: translateX 460ms ($num * 70ms) ease-in-out forwards;
-          }
-        }
-      }
-    }
-  }
-
-  @include mobile {
-    .list {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: -1000%;
-      z-index: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
+    background-color: transparent;
+    transition: all 0.8s ease;
 
     .logo {
-      display: none;
+        position: fixed;
+        height: 6vh;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 10rem;
+        cursor: pointer;
+        //transform: translateY(-600px);
+        //animation: 1s slideIn ease-in-out forwards 0s;
+        z-index: 10;
     }
 
-    .list.active {
-      background: #27193e;
-      top: 9vh;
-      opacity: 1;
-      transition: all 0.8s ease;
-      right: 0%;
+    .menu {
+        opacity: 0;
+
+        @include mobile {
+            display: flex;
+            width: 100vw;
+            flex-direction: row;
+            justify-content: flex-end;
+            opacity: 1;
+
+            .ham {
+                outline: 0;
+            }
+        }
     }
 
-    .list.nonActive{
-      transition: all 0.8s ease;
+    .ham {
+        cursor: default;
     }
-  }
+
+    .list {
+        position: fixed;
+        right: 5%;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        color: rgba(222, 227, 246, 0.6);
+        grid-gap: 2rem;
+        list-style: none;
+        text-align: center;
+        z-index: 10;
+        @include mobile {
+            padding: 2rem;
+        }
+
+        .dropdown {
+            border-radius: 10%;
+            perspective: 1000px;
+            font-size: 1.4rem;
+            padding: 1rem;
+            z-index: 100;
+            //transform: translateY(-600px);
+            //animation: 1s slideIn ease-in-out forwards 0s;
+            &:hover {
+                // background-color: rgba(207, 207, 207, 0.6);
+                cursor: pointer;
+            }
+
+            &:hover .dropdownMenu li {
+                display: block;
+            }
+
+            @include mobile {
+                .dropdownMenu li {
+                    width: 100vw;
+                    padding-left: 0;
+                    margin-left: 0;
+                    background-color: #4d1d79 !important;
+                    font-size: 2rem !important;
+                }
+
+            }
+
+            .tabIcon {
+                height: 2.5rem;
+                margin-right: 1rem;
+                font-size: 2.5rem;
+            }
+
+            .dropdownMenu {
+                position: absolute;
+                top: 100%;
+                perspective: 1000px;
+                width: fit-content;
+                z-index: -1;
+                padding: 0%;
+
+                li {
+                    display: none;
+                    list-style: none;
+                    color: white;
+                    background-color: #27193e;
+                    padding: 10px 20px;
+                    font-size: 1.2vw;
+                    opacity: 0;
+                    // box-shadow: 0 0 4px 0 #666666;
+
+                    &:hover {
+                        background-color: #27193ec4;
+                    }
+                }
+
+                &:hover {
+                    background: #2980b9;
+                    cursor: pointer;
+                }
+
+                @for $num from 0 through 10 {
+                    .dropdownItem-#{$num} {
+                        //font-size: 1.1vw;
+                        transform-origin: top center;
+                        animation: translateX
+                            460ms
+                            ($num * 70ms)
+                            ease-in-out
+                            forwards;
+                    }
+                }
+            }
+
+            @include mobile {
+              .dropdownMenu {
+                    position: relative;
+                    top: 3vh;
+                    left: -30px;
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        .list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: -1000%;
+            z-index: 0;
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        .list.active {
+            background: #27193e;
+            top: 9vh;
+            opacity: 1;
+            transition: all 0.8s ease;
+            right: 0%;
+        }
+
+        .list.nonActive {
+            transition: all 0.8s ease;
+        }
+    }
 }
 
 .activeA {
-  background-color: rgba(15, 0, 41, 0.9);
-  box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
+    background-color: rgba(15, 0, 41, 0.9);
+    box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
 
 // @keyframes slideIn {
@@ -185,86 +208,87 @@ $hamburger-layer-color: rgb(194, 194, 194);
 // }
 
 @keyframes translateX {
-  0% {
-    opacity: 0;
-    transform: translateX(60px);
-  }
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
 
-  80% {
-    transform: translateX(-5px);
-  }
+    80% {
+        transform: translateX(-5px);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .naviTab {
-  display: -webkit-box;
+    display: -webkit-box;
 }
 
 .tabTitle {
-  position: relative;
-  display: flex;
-  font-weight: 600;
-  color: #dee3f699 !important;
+    position: relative;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    color: #dee3f699 !important;
 }
 
 .tabTitle::after {
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 2.5px;
-  background-color: #3b38e7d2;
-  left: 50%;
-  bottom: -10px;
-  transition: all 0.3s ease-in-out;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2.5px;
+    background-color: #3b38e7d2;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .tabTitle:hover {
-  color: white !important;
-  text-decoration: none !important;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .naviTab:hover .tabTitle::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .activeTab {
-  .tabTitle {
-    color: white !important;
-  }
+    .tabTitle {
+        color: white !important;
+    }
 
-  .tabTitle::after {
-    width: 100%;
-    left: 0;
-  }
+    .tabTitle::after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 .navColor {
-  background-color: rgba(15, 0, 41, 0.9) !important;
+    background-color: rgba(15, 0, 41, 0.9) !important;
 }
 
 .MuiFab-secondary {
-  background-color: tomato !important;
+    background-color: tomato !important;
 }
 
 .contactUsCardsHeading {
-  font-family: "Mulish", sans-serif;
-  font-size: 20px;
-  color: #35166b;
-  font-weight: 900;
-  margin: 20px auto;
-  text-align: start;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    color: #35166b;
+    font-weight: 900;
+    margin: 20px auto;
+    text-align: start;
 }
 
 .contactUsCardDialog {
-  max-width: 90vw;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 20px auto;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px auto;
 }
