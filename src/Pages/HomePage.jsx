@@ -106,6 +106,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                 <a target="_blank" href="https://www.capgemini.com"><img data-aos="fade-up" data-aos-delay="100" alt="Capgemini" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img></a>
                 <img data-aos="fade-up" data-aos-delay="100" alt="Village Agro" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
                 <a target="_blank" href="https://storyxpress.co"><img data-aos="fade-up" data-aos-delay="150" alt="StoryXpress" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img></a>
+                <img data-aos="fade-up" data-aos-delay="150" alt="Planeteers HK" src="https://media-exp3.licdn.com/dms/image/C560BAQFK4ZtWzCHFxg/company-logo_200_200/0/1597050844205?e=2159024400&v=beta&t=KVrgXaJq4qhkxmrz0DZR8rGSN21pFiOV6GtBc-3YlvM"></img>
             </div>
         </div>
     </div>
