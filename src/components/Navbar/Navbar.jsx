@@ -116,7 +116,7 @@ const Navbar = React.forwardRef((props, ref) => {
             handleClickOpen();
         }
 
-        if (openBar && (item.id !== 4 || item.id !== 5)) {
+        if (openBar && item.id !== 4 && item.id !== 5) {
             setopenBar(!openBar);
         }
     }
