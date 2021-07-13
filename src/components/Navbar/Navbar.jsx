@@ -99,25 +99,24 @@ const Navbar = React.forwardRef((props, ref) => {
             document
                 .getElementById("recruit")
                 .scrollIntoView({ behavior: "smooth" });
-        } else if (item.id === 4) {
+        } else if (item.id === 4 || item.id === 5) {
             if (screenSize < 960) {
                 for (var i = 1; i <= item.drop.length; i++) {
-                    
-                  document.getElementById(`${item.id}.${i}`).style.display ===
-                  "block"
-                      ? (document.getElementById(
-                            `${item.id}.${i}`
-                        ).style.display = "none")
-                      : (document.getElementById(
-                            `${item.id}.${i}`
-                        ).style.display = "block");
+                    document.getElementById(`${item.id}.${i}`).style.display ===
+                    "block"
+                        ? (document.getElementById(
+                              `${item.id}.${i}`
+                          ).style.display = "none")
+                        : (document.getElementById(
+                              `${item.id}.${i}`
+                          ).style.display = "block");
                 }
             }
-        } else if (item.id === 5) {
+        } else if (item.id === 6) {
             handleClickOpen();
         }
 
-        if (openBar && item.id !== 4) {
+        if (openBar && (item.id !== 4 || item.id !== 5)) {
             setopenBar(!openBar);
         }
     }
@@ -189,18 +188,18 @@ const Navbar = React.forwardRef((props, ref) => {
                                 }}>
                                 <div id={item.id} className='naviTab'>
                                     <div className='tabTitle'>
+                                        {item.heading}
                                         {item.drop ? (
                                             <div
                                                 style={{
                                                     display: "flex",
-                                                    paddingRight: "6px",
+                                                    paddingLeft: "6px",
                                                 }}>
                                                 <ExpandMoreIcon
                                                     style={{ color: "red" }}
                                                 />
                                             </div>
                                         ) : null}
-                                        {item.heading}
                                     </div>
                                 </div>
                                 <ul className='dropdownMenu'>
