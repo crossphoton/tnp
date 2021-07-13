@@ -5,6 +5,7 @@ import Jatin from "../images/webCord2.jpeg";
 import Yashwanth from "../images/Yashwanth.jpg";
 import Akhil from "../images/akhil.jpg";
 import Rohith from "../images/Rohith.jpg";
+import Deepika from "../images/deepika.jpg";
 
 const WebTeam = [
     {
@@ -78,6 +79,7 @@ const PlacementTeam = [
         name: "Illa Sai Deepika",
         email: "cs19b1011@iiitr.ac.in",
         phone: "+91 9390075787",
+        image: Deepika,
     },
     {
         name: "Kaustubh Kesharwani",

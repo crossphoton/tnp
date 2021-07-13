@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/logo.svg"
 import ReusableCard from '../components/ReusableBlock';
-import BackImg from '../images/image1.jpeg'
+import BackImg from '../images/banner/cover.webp'
 import WhyRecruitUs from "./WhyRecruitUs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,7 +41,7 @@ const HomePage = React.forwardRef((props, ref)=> {
 
                     <div className="HomepageLogoText" data-aos={screenSize>960 ? "fade-right" : "fade-down"}  >
                         {screenSize>960 ? <h1>Training and <br/>Placement Cell</h1> : <h1>Training and Placement Cell</h1>}
-                        <h6>Indian Institute Of Information Technology, Raichur</h6>
+                        <h6>Indian Institute of Information Technology, Raichur</h6>
                     </div>
 
             
@@ -102,10 +102,10 @@ const HomePage = React.forwardRef((props, ref)=> {
         </div>
         <div className="company">
             <div className="company-flexbox">
-                <img alt="CKM Vigil" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img>
-                <img alt="Capgemini" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img>
-                <img alt="Village Agro" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
-                <img alt="StoryXpress" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img>
+                <a target="_blank" href="https://ckmvigil.in/"><img data-aos="fade-up" data-aos-delay="100" alt="CKM Vigil" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img></a>
+                <a target="_blank" href="https://www.capgemini.com"><img data-aos="fade-up" data-aos-delay="100" alt="Capgemini" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img></a>
+                <img data-aos="fade-up" data-aos-delay="100" alt="Village Agro" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
+                <a target="_blank" href="https://storyxpress.co"><img data-aos="fade-up" data-aos-delay="150" alt="StoryXpress" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img></a>
             </div>
         </div>
     </div>
