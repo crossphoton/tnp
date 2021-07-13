@@ -51,7 +51,7 @@ function Footer() {
                     </div>
 
                     <div className=' footerItems'>
-                        <h3 className='footer-title contactUs'>Conatct Us</h3>
+                        <h3 className='footer-title contactUs'>Contact Us</h3>
 
                         {Contacts.map((item, id) => {
                             return (
