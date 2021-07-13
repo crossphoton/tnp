@@ -1,7 +1,7 @@
 import React from "react"
 
-function ReusableCard(props){
-
+function ReusableCard(props) {
+  
     return (
       props.isLeftAlign ? <div className="reusableMain" data-aos="fade-up" >
 

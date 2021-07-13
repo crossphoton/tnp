@@ -4,15 +4,11 @@ import { WhyUs } from '../Content/Home';
 
 const whyRecruitUs = React.forwardRef((props, ref)=>{
 
-    // useEffect(() => {
-    //     ref.current.setNavState("navColor", "2");
-    // }, [ref])
-
     return (
         <div >
         
         {WhyUs.map((item, id)=>{
-                return(
+                return (
                     <ReusableCard
                         key={id}
                         isLeftAlign={item.isLeftAlign}
@@ -23,7 +19,7 @@ const whyRecruitUs = React.forwardRef((props, ref)=>{
                         // imgSrc={item.imgSrc}
                         // altText={item.altText}
                     />
-                )
+                );
             })}
 
             <div id="recruit3" ></div>

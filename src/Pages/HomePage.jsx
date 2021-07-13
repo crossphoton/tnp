@@ -79,7 +79,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                 return(
                     <ReusableCard
                         key={id}
-                        isLeftAlign={item.isLeftAlign}
+                        isLeftAlign={screenSize <= 960 ? true : item.isLeftAlign }
                         haveLogo={item.haveLogo}
                         heading={item.heading}
                         writer={item.writer}
