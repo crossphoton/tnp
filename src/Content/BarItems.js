@@ -58,7 +58,9 @@ const BarItems = [
                 id: 5.1,
                 heading: "Internship Rules",
                 onClick: () => {
-                  console.log("File not found");
+                  window.open(
+                    "https://drive.google.com/file/d/1kwH31HlIJG5FhZM9m3kxvH-W7IJiNqEM/view?usp=sharing"
+                  );
                 },
             }
         ],
