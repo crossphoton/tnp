@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
 @import "./media";
 
-
 .recruitUs {
   position: relative;
   min-height: 100vh;
@@ -24,7 +23,7 @@
   // margin-left: 7vw;
   // margin-right: 7vw;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
   }
 }
@@ -67,15 +66,15 @@
   border: none;
   transition: 0.3s ease-in-out;
 
-  @include mobile{
+  @include mobile {
     width: 60%;
     margin-top: 2vh;
     margin-bottom: 5vh;
   }
 }
 
-.blockquote{
-  @include mobile{
+.blockquote {
+  @include mobile {
     padding: 0;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -89,27 +88,26 @@
   align-items: center;
 }
 
-.R1{
-  @include mobile{
+.R1 {
+  @include mobile {
     padding-bottom: 5vh;
   }
 }
 
-.R2{
-  @include mobile{
+.R2 {
+  @include mobile {
     padding-bottom: 5vh;
     padding-top: 5vh;
   }
 }
 
 .reusableHeadingImage {
-  height: 40vh;
   width: 20vw;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
 
-  @include mobile{
+  @include mobile {
     width: 80vw;
     max-width: 320px;
   }
@@ -127,7 +125,7 @@
   padding: 10px 20px;
   line-height: 1.4;
 
-  @include mobile{
+  @include mobile {
     padding: 10px 10px;
     font-size: 16px;
   }
@@ -144,7 +142,7 @@
   color: #ccc;
   font-size: 3em;
 
-  @include mobile{
+  @include mobile {
     font-size: 2.8em;
     top: 15px;
   }
@@ -161,11 +159,10 @@
   color: #ccc;
   font-size: 3em;
 
-  @include mobile{
+  @include mobile {
     font-size: 2.8em;
     top: 20px;
   }
-
 }
 footer {
   margin: 0;
