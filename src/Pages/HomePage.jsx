@@ -8,6 +8,9 @@ import Display from "../components/Display";
 import { Companies } from "../Content/Companies";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import RecruitmentTimeline from "../components/RecruitmentTimeline"
+
+  
 
 AOS.init();
 
@@ -96,6 +99,16 @@ const HomePage = React.forwardRef((props, ref) => {
             />
           );
         })}
+
+        <div style={{ maxWidth: "1000px", margin: "auto" }}>
+          <div id="recruit" style={{ height: "2vh" }}></div>
+
+          <h1 className="recruitHead" data-aos="fade-up">
+            Recruitment Process
+          </h1>
+          <RecruitmentTimeline />
+          
+        </div>
 
         <div style={{ maxWidth: "1000px", margin: "auto" }}>
           <div id="recruit" style={{ height: "2vh" }}></div>
