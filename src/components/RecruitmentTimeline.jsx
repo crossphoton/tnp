@@ -15,24 +15,31 @@ const paperstyle={
 }
 
 export default function RecruitmentTimeline() {
+
+    function assignAOS(id) {
+        if (id % 2 === 0) { return 'fade-left' }
+        else { return 'fade-right' };
+    }
+
 	return (
 
         <Timeline align="alternate">
            { 
-               TimelineSteps.map((step) => {
+               TimelineSteps.map((step,id) => {
                 return (
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot color="#35166b" />
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                    <Paper 
-                        elevation={3} style={paperstyle}> {step}
-                    </Paper>
-                    </TimelineContent>
-                </TimelineItem>
-                )})
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot color='#35166b' />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent data-aos={assignAOS(id)} >
+                            <Paper elevation={3} style={paperstyle}>
+                                {" "}
+                                {step}
+                            </Paper>
+                        </TimelineContent>
+                    </TimelineItem>
+                );})
            }
         </Timeline>
 	);

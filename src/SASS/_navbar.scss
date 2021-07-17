@@ -27,7 +27,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
   @include barTabs;
   height: 8vh;
 
-  @include mobile {
+  @include navMobile {
     height: 9vh;
   }
   background-color: transparent;
@@ -49,7 +49,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
   .menu {
     opacity: 0;
 
-    @include mobile {
+    @include navMobile {
       display: flex;
       width: 100vw;
       flex-direction: row;
@@ -70,13 +70,13 @@ $hamburger-layer-color: rgb(194, 194, 194);
     position: fixed;
     right: 5%;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     color: rgba(222, 227, 246, 0.6);
     grid-gap: 2rem;
     list-style: none;
     text-align: center;
     z-index: 10;
-    @include mobile {
+    @include navMobile {
       padding: 2rem;
     }
 
@@ -97,7 +97,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
         display: block;
       }
 
-      @include mobile {
+      @include navMobile {
         .dropdownMenu li {
           width: 100vw;
           padding-left: 0;
@@ -150,7 +150,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
         }
       }
 
-      @include mobile {
+      @include navMobile {
         .dropdownMenu {
           position: relative;
           top: 3vh;
@@ -160,7 +160,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
     }
   }
 
-  @include mobile {
+  @include navMobile {
     .list {
       display: flex;
       flex-direction: column;

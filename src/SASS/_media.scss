@@ -4,3 +4,9 @@
     }
 }
 
+@mixin navMobile {
+    @media screen and (max-width: 1190px){
+        @content
+    }
+}
+
