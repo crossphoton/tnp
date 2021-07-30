@@ -103,20 +103,6 @@ const HomePage = React.forwardRef((props, ref) => {
                   );
               })}
 
-              <div style={{ maxWidth: "1000px", margin: "auto" }}>
-                  <div style={{ height: "2vh" }}></div>
-
-                  <h1
-                      className='recruitHead'
-                      data-aos='fade-up'
-                      id='rProcess'
-                      onClick={() => {
-                          console.log(window.scrollY);
-                      }}>
-                      Recruitment Process
-                  </h1>
-                  <RecruitmentTimeline />
-              </div>
 
               <div style={{ maxWidth: "1000px", margin: "auto" }}>
                   <div id='recruit' style={{ height: "2vh" }}></div>
@@ -133,6 +119,23 @@ const HomePage = React.forwardRef((props, ref) => {
                   <WhyRecruitUs />
               </div>
           </div>
+
+
+
+              <div style={{ maxWidth: "1000px", margin: "auto" }}>
+                  <div style={{ height: "2vh" }}></div>
+
+                  <h1
+                      className='recruitHead'
+                      data-aos='fade-up'
+                      id='rProcess'
+                      onClick={() => {
+                          console.log(window.scrollY);
+                      }}>
+                      Recruitment Process
+                  </h1>
+                  <RecruitmentTimeline />
+              </div>
 
           <div className='companies'>
               <Display collection={Companies} />
