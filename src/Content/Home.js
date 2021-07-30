@@ -58,8 +58,8 @@ const WhyUs = [
         heading: "Industry-Relevant Work Experience",
         content: `The students are working in different startups and tech giants from the first year
     which prepares them for the industry, working in different fields like Data Science
-    Machine Learning, Web Development, Software Development, etc.  The institute also offers students the opportunity for summer
-     internships as well as semester long internships to get Industry-Relevant experience. 
+    Machine Learning, Web Development, Software Development, etc. The institute also offers students the opportunity for summer
+     internships as well as semester long internships to get Industry-Relevant experience.` 
     },
 ];
 
