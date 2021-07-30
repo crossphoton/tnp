@@ -13,12 +13,12 @@ const BarItems = [
     },
     {
         id: 3,
-        heading: "Recruitment Process",
+        heading: "Why Recruit Us",
         route: "/",
     },
     {
         id: 4,
-        heading: "Why Recruit Us",
+        heading: "Recruitment Process",
         route: "/",
     },
     {
