@@ -36,7 +36,8 @@ const WhyUs = [
         content: `Being mentored by IITH, IIITR has adopted the innovative
                     fractal academics system, which warrants continuous
                     evaluation. This ensures the students have a deeper
-                    understanding of the core subjects.`,
+                    understanding of the core subjects. 
+`,
     },
     {
         id: 2,
@@ -55,11 +56,10 @@ const WhyUs = [
         isLeftAlign: true,
         haveLogo: false,
         heading: "Industry-Relevant Work Experience",
-        content: `The students are working in different startups and tech giants from the first
-    lf which prepares them for the industry, working in different fields like Data Science
-    Machine Learning, Web Development, Software Development, etc. They have been exploring 
-    industry-relevant skills & technologies like Python, C++, Java, Javascript, flutter, Go,
-     flask, NoSQL, SQL, Django, Node, Vue, React, Docker, among others.`,
+        content: `The students are working in different startups and tech giants from the first year
+    which prepares them for the industry, working in different fields like Data Science
+    Machine Learning, Web Development, Software Development, etc.  The institute also offers students the opportunity for summer
+     internships as well as semester long internships to get Industry-Relevant experience. 
     },
 ];
 
