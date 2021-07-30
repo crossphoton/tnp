@@ -18,8 +18,18 @@ function ReusableCard(props) {
           </div>
         ) : null}
         <div className="reusableCard">
-          <blockquote className="blockquote">
-            <p className="quotation"> {props.content}</p>
+          <blockquote
+            className="blockquote"
+            style={{ overflowY: "scroll", maxHeight: 500 }}
+          >
+            <p className="quotation">
+              {" "}
+              {String(props.content)
+                .split("\n")
+                .map((item, i) => (
+                  <p key={i}>{item}</p>
+                ))}
+            </p>
             <footer> {props.writer}</footer>
           </blockquote>
         </div>

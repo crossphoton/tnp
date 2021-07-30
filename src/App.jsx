@@ -6,14 +6,11 @@ import Footer from "./Structure/Footer";
 // import Programs from "./Pages/Programs";
 // import ClubActivities from "./Pages/ClubActivities";
 import Home from "./Pages/HomePage";
-import ComingSoon from "./Pages/ComingSoon";
-
-const siteIsLive = process.env.SITE_IS_LIVE;
+// import ComingSoon from "./Pages/ComingSoon";
 
 function App() {
   const ref = React.useRef(null);
 
-  if (siteIsLive) {
     return (
       <div className="base" id="back-to-top">
         <CssBaseline />
@@ -39,9 +36,6 @@ function App() {
       <Footer />
     </div>
     );
-  } else {
-    return <ComingSoon/>
-  }
 }
 
 export default App;
