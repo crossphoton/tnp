@@ -71,7 +71,9 @@ const Navbar = React.forwardRef((props, ref) => {
         }
 
         if (window.location.pathname === "/")
-            if (window.scrollY >= 2100) {
+            if (window.scrollY >= 2700) {
+                addActiveClass("4");
+            } else if (window.scrollY >= 1900) {
                 addActiveClass("3");
             } else if (window.scrollY >= 600) {
                 addActiveClass("2");
@@ -97,9 +99,13 @@ const Navbar = React.forwardRef((props, ref) => {
                 .scrollIntoView({ behavior: "smooth", block: "center" });
         } else if (item.id === 3) {
             document
+                .getElementById("rProcess")
+                .scrollIntoView({ behavior: "smooth", block: "center" });
+        } else if (item.id === 4) {
+            document
                 .getElementById("recruit")
                 .scrollIntoView({ behavior: "smooth" });
-        } else if (item.id === 4 || item.id === 5) {
+        } else if (item.id === 5 || item.id === 6) {
             if (screenSize < 960) {
                 for (var i = 1; i <= item.drop.length; i++) {
                     document.getElementById(`${item.id}.${i}`).style.display ===
@@ -112,11 +118,11 @@ const Navbar = React.forwardRef((props, ref) => {
                           ).style.display = "block");
                 }
             }
-        } else if (item.id === 6) {
+        } else if (item.id === 7) {
             handleClickOpen();
         }
 
-        if (openBar && item.id !== 4 && item.id !== 5) {
+        if (openBar && item.id !== 5 && item.id !== 6) {
             setopenBar(!openBar);
         }
     }

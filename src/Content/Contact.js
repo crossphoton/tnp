@@ -46,13 +46,13 @@ const PlacementHead = [
 const PlacementCoordinators = [
     {
         name: "Aditya Agrawal",
-        email: "cs19b1003+tnp@iiitr.ac.in",
+        email: "tnp+aditya@iiitr.ac.in",
         phone: "+91 9785559273",
         image: "https://bit.ly/crossphoton-img",
     },
     {
         name: "Reethu",
-        email: "cs19b1024@iiitr.ac.in",
+        email: "tnp@iiitr.ac.in",
         phone: "+91 8919239558",
         image: "https://iiitr.ac.in/assets/images/prteam/reethu.webp",
     },

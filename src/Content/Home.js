@@ -12,7 +12,7 @@ const Thoughts = [
         haveLogo: true,
         writer: "Dr. BS Murty",
         heading: "From Director's Desk",
-        content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+        content: `Indian Institute of Information Technology Raichur (IIIT Raichur) welcomes you to the Institute where excellence is nurtured.We are proud of preparing dynamic leaders, who make a difference to the world, with the skills that are nurtured here for a better tomorrow. It is gratifying for IIT Hyderabad (IITH), which has completed 12 years, to nurture another Institute of National Importance. IIIT Raichur is one of the new IIITs established by the Ministry of Education (MoE), Government of India, located at Raichur, Karnataka state. We are looking forward to long-term collaborations, to help us grow stronger. Industry-Research-Academia ties upon cutting-edge technologies are the key for the growth of the country. To enable the students to take up longer internships, we have revised the curriculum to allow the students with greater than 8 CGPA to do 6-7 months long internship during their 6th semester (Jan-July). Going to be based on the land of historic importance, Raichur, I am sure, IIIT Raichur will emerge as the state-of-the-art institute and its students will the deliver their best in industry, R&D and academics.`,
         imgSrc: directordeskImage,
         altText: "Director",
     },
@@ -36,7 +36,8 @@ const WhyUs = [
         content: `Being mentored by IITH, IIITR has adopted the innovative
                     fractal academics system, which warrants continuous
                     evaluation. This ensures the students have a deeper
-                    understanding of the core subjects.`,
+                    understanding of the core subjects. 
+`,
     },
     {
         id: 2,
@@ -55,11 +56,10 @@ const WhyUs = [
         isLeftAlign: true,
         haveLogo: false,
         heading: "Industry-Relevant Work Experience",
-        content: `The students are working in different startups and tech giants from the first
-    lf which prepares them for the industry, working in different fields like Data Science
-    Machine Learning, Web Development, Software Development, etc. They have been exploring 
-    industry-relevant skills & technologies like Python, C++, Java, Javascript, flutter, Go,
-     flask, NoSQL, SQL, Django, Node, Vue, React, Docker, among others.`,
+        content: `The students are working in different startups and tech giants from the first year
+    which prepares them for the industry, working in different fields like Data Science
+    Machine Learning, Web Development, Software Development, etc. The institute also offers students the opportunity for summer
+     internships as well as semester long internships to get Industry-Relevant experience.` 
     },
 ];
 
