@@ -1,7 +1,5 @@
 # Tranining And Placement Cell Website
 
-This is dev branch of website for the placement cell of the institute.
+This is production branch of website for the placement cell of the institute.
 
-Testing environment live at-https://tnp-dev.vercel.app/
-
-Feel Free to make PRs
+Live at-https://tnp.iiitr.ac.in/
