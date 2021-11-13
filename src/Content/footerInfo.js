@@ -10,12 +10,6 @@ const Contacts = [
     phoneNum: "+91 8768779475",
   },
   {
-    id: 2,
-    name: "Aditya Agrawal (Student Coordinator)",
-    email: "tnp@iiitr.ac.in",
-    phoneNum: "+91 9785559273",
-  },
-  {
     id: 3,
     name: "Reethu Sanagala (Student Coordinator)",
     email: "tnp@iiitr.ac.in",
