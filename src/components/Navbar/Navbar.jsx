@@ -99,12 +99,12 @@ const Navbar = React.forwardRef((props, ref) => {
                 .scrollIntoView({ behavior: "smooth", block: "center" });
         } else if (item.id === 3) {
             document
-                .getElementById("rProcess")
+                .getElementById("recruit")
                 .scrollIntoView({ behavior: "smooth", block: "center" });
         } else if (item.id === 4) {
             document
-                .getElementById("recruit")
-                .scrollIntoView({ behavior: "smooth" });
+                .getElementById("rProcess")
+                .scrollIntoView({ behavior: "smooth", block: "center" });
         } else if (item.id === 5 || item.id === 6) {
             if (screenSize < 960) {
                 for (var i = 1; i <= item.drop.length; i++) {

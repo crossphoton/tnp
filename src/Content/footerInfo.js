@@ -5,15 +5,15 @@ const address = `Government Engineering College, Raichur, located at Yeramarus.`
 const Contacts = [
   {
     id: 1,
-    name: "Dr. Sadhana Jha (Faculty Incharge)",
+    name: "Dr. Debasish Mukherjee (Placement Faculty Incharge)",
     email: "fic.placement@iiitr.ac.in",
-    phoneNum: "+91 8768779475",
+    // phoneNum: "+91 8768779475",
   },
   {
     id: 3,
-    name: "Reethu Sanagala (Student Coordinator)",
+    name: "Dheerendra (Placement Officer)",
     email: "tnp@iiitr.ac.in",
-    phoneNum: "+91 8919239558",
+    // phoneNum: "+91 8919239558",
   },
   {
     id: 4,

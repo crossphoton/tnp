@@ -3,7 +3,7 @@ const companies = [
     id: 1,
     name: "Capgemini",
     image:
-      "https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Capgemini_logo.svg/375px-Capgemini_logo.svg.png",
     url: "https://www.capgemini.com",
   },
   {
