@@ -36,28 +36,26 @@ const WebTeam = [
 
 const PlacementHead = [
     {
-        name: "Dr. Sadhna Jha",
+        name: "Dr. Debasish Mukherjee",
         email: "fic.placement@iiitr.ac.in",
-        phone: "+91 8768779475",
+        // phone: "+91 8768779475",
         image: tpoImage,
     },
 ];
 
-const PlacementCoordinators = [
+const PlacementOfficer = [
     {
-        name: "Reethu",
+        name: "Dheerendra",
         email: "tnp@iiitr.ac.in",
-        phone: "+91 8919239558",
-        image: "https://iiitr.ac.in/assets/images/prteam/reethu.webp",
+        // phone: "+91 9358316992",
     },
 ];
 
 const PlacementTeam = [
     {
-        name: "Kushagra Indurakhya",
-        email: "cs19b1017@iiitr.ac.in",
-        phone: "+91 9026409246",
-        image: "https://cdn.kindurkhya.me/profile.jpg",
+        name: "Abhay Suresh",
+        email: "cs20b1018@iiitr.ac.in",
+        phone: "+91 8089338674",
     },
     {
         name: "Abhishek Sahoo",
@@ -65,67 +63,55 @@ const PlacementTeam = [
         phone: "+91 9358316992",
     },
     {
-        name: "Siddharth Saini",
-        email: "cs19b1024@iiitr.ac.in",
-        phone: "+91 9996130681",
+        name: "Abhyuday Choumal",
+        email: "cs20b1001@iiitr.ac.in",
+        phone: "+91 8562834487",
     },
     {
-        name: "Illa Sai Deepika",
-        email: "cs19b1011@iiitr.ac.in",
-        phone: "+91 9390075787",
-        image: Deepika,
+        name: "Manav Garg",
+        email: "cs20b1009@iiitr.ac.in",
+        phone: "+91 8053920097",
     },
     {
-        name: "Kaustubh Kesharwani",
-        email: "cs19b1015@iiitr.ac.in",
-        phone: "+91 9121066021",
-        image: "https://drive.google.com/u/0/uc?id=1Wu-b_9d6GU4EagSS1-NDN0QQwrXB2NuB&export=download",
+        name: "Priyansh Agrahari",
+        email: "cs20b1014@iiitr.ac.in",
+        phone: "+91 9179918909",
     },
     {
-        name: "Manav Chaudhary",
-        email: "cs19b1018@iiitr.ac.in",
-        phone: "+91 7217628148",
+        name: "Rajesh Kumar",
+        email: "cs20b1016@iiitr.ac.in",
+        phone: "+91 8905934769",
     },
     {
-        name: "Vibhanshu Jain",
-        email: "cs19b1027@iiitr.ac.in",
-        phone: "+91 9680017462",
-        image: "https://iiitr.ac.in/assets/images/student/gensec_1.jpeg",
+        name: "Rakesh Kumbhkar",
+        email: "cs20b1017@iiitr.ac.in",
+        phone: "+91 9772044523",
     },
     {
-        name: "Sai Yaminiee Ganda",
-        email: "cs19b1022@iiitr.ac.in",
-        phone: "+91 7779021200",
+        name: "Sikandar Kathat",
+        email: "cs20b1020@iiitr.ac.in",
+        phone: "+91 9465511837",
     },
     {
-        name: "Dosawada Rohith",
-        email: "cs19b1008@iiitr.ac.in",
-        phone: "+91 9394445259",
-        image: Rohith,
+        name: "Srinitha Beerally",
+        email: "cs20b1004@iiitr.ac.in",
+        phone: "+91 9014408217",
     },
     {
-        name: "Nerella Akhil",
-        email: "cs19b1020@iiitr.ac.in",
-        phone: "+91 8897073603",
-        image: Akhil,
+        name: "Umaid Shaan",
+        email: "cs20b1010@iiitr.ac.in",
+        phone: "+91 7667561911",
     },
     {
-        name: "Yashwanth Vallabhu",
-        email: "cs19b1030@iiitr.ac.in",
-        phone: "+91 9390230911",
-        image: Yashwanth,
+        name: "Uttkarshika",
+        email: "cs20b1023@iiitr.ac.in",
+        phone: "+91 7986871238",
     },
     {
-        name: "Nimish Vadlamudi",
-        email: "cs19b1026@iiitr.ac.in",
-        phone: "+91 8106092571",
-    },
-    {
-        name: "Ananya Mantravadi",
-        email: "cs19b1004@iiitr.ac.in",
-        phone: "+91 9391307112",
-        image: Ananya,
+        name: "Yugal Garg",
+        email: "cs20b1027@iiitr.ac.in",
+        phone: "+91 8209810441",
     },
 ];
 
-export { WebTeam, PlacementCoordinators, PlacementHead, PlacementTeam };
+export { WebTeam, PlacementOfficer, PlacementHead, PlacementTeam };
